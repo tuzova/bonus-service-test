@@ -5,7 +5,11 @@ public class Main {
     long amount = 1000_60;
     boolean registered = true;
 
-    service.calculate(amount, registered);
+    //объявим тип и наименование итоговой переменной
+    long bonus = service.calculate(amount, registered);
+
+    //объявим функцию вывода итоговой переменной
+    System.out.println(bonus);
 
   }
 }
